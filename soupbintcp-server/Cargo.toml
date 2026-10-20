@@ -1,0 +1,11 @@
+[package]
+name = "soupbintcp-server"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+crossbeam = "0.8.5"
+soupbintcp-core = { path = "../soupbintcp-core" }
+
+[dev-dependencies]
+soupbintcp-client = { path = "../soupbintcp-client" }
