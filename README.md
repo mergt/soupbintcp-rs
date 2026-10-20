@@ -38,6 +38,19 @@ Every packet in both directions has the same structure:
 | Server → Client | `H` | Server Heartbeat |
 | Server → Client | `Z` | End of Session |
 
+## Installation
+
+These crates are not on crates.io; add them as git dependencies. Cargo finds each crate inside the workspace repo by name and resolves the internal path dependencies automatically:
+
+```toml
+[dependencies]
+soupbintcp-client = { git = "https://github.com/mergt/soupbintcp-rs", tag = "v0.1.0" }
+# or
+soupbintcp-server = { git = "https://github.com/mergt/soupbintcp-rs", tag = "v0.1.0" }
+```
+
+Pinning to a tag (or `rev = "<commit>"`) is recommended — without it, `cargo update` pulls the latest `main`.
+
 ## Usage
 
 ### Server
