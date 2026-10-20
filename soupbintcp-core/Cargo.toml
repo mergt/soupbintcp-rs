@@ -2,6 +2,11 @@
 name = "soupbintcp-core"
 version = "0.1.0"
 edition = "2024"
+description = "Wire format codec for the Nasdaq SoupBinTCP protocol (3.0/4.x)"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mergt/soupbintcp-rs"
+keywords = ["soupbintcp", "nasdaq", "ouch", "fix", "trading"]
+categories = ["network-programming"]
 
 [dependencies]
 thiserror = "2.0.21"

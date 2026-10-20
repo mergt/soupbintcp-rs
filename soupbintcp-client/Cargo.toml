@@ -2,7 +2,12 @@
 name = "soupbintcp-client"
 version = "0.1.0"
 edition = "2024"
+description = "Blocking SoupBinTCP client: login handshake, sequenced-data event stream, heartbeats"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/mergt/soupbintcp-rs"
+keywords = ["soupbintcp", "nasdaq", "ouch", "fix", "trading"]
+categories = ["network-programming"]
 
 [dependencies]
 crossbeam = "0.8.5"
-soupbintcp-core = { path = "../soupbintcp-core" }
+soupbintcp-core = { version = "0.1.0", path = "../soupbintcp-core" }
